@@ -175,7 +175,7 @@ function App() {
             <div className="flex gap-4">
               <img
                 class="avatar"
-                src="src/assets/images/IMG_20240114_185432_131.jpg"
+                src="images/IMG_20240114_185432_131.jpg"
                 alt="avatar"
                 style={{
                   borderRadius: "10px",
