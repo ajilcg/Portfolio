@@ -2,13 +2,13 @@ import React from "react";
 import "./About.css";
 export const About = () => {
   return (
-    <div style={{ paddingTop: "4rem" }} class="container">
+    <div style={{ paddingTop: "4rem", padding: "2rem" }} class="container">
       <div class="row">
         <div class="card-wrapper">
           <div class="card">
             <div class="card-image">
               <img
-                src="images/Ajil.jpg"
+                src="src/assets/images/Ajil.jpg"
                 style={{
                   width: "120%",
                   height: "100%",

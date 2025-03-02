@@ -5,7 +5,7 @@ export const Resume = () => {
     <>
       <section
         id="resume"
-        // style={{ paddingTop: "3rem" }}
+        style={{ paddingTop: "4rem" }}
         class="resume section"
       >
         <div
