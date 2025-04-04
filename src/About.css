@@ -34,7 +34,7 @@
     transition: .5s;
   }
   
-  .card:hover .card-image {
+  .card:hover  .card-image {
     transform: translateY(-100px);
     transition: all .9s;
   }
@@ -126,4 +126,17 @@
   }
   .card {
     padding: 2em;
+  }
+  .card-image{
+    background-image: url("../src/assets/images/MAN.PNG");
+    /* background-image: url("../src/assets/images/IMG_20240114_185432_131.jpg"); */
+    background-size: cover;
+    }
+
+    @media (max-width: 1000px) {
+      .card-image{
+        background-image: url("../src/assets/images/IMG_20240114_185432_131.jpg");
+        background-size: cover;
+        background-position: center;
+        }
   }

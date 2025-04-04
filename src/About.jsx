@@ -7,8 +7,8 @@ export const About = () => {
         <div class="card-wrapper">
           <div class="card">
             <div class="card-image">
-              <img
-                src="src/assets/images/Ajil.jpg"
+              {/* <img
+                src="../src/assets/images/Ajil.jpg"
                 style={{
                   width: "120%",
                   height: "100%",
@@ -16,7 +16,7 @@ export const About = () => {
                   backgroundPosition: "center",
                 }}
                 alt="profile one"
-              ></img>
+              ></img> */}
             </div>
 
             <ul class="social-icons">

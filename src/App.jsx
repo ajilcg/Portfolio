@@ -7,12 +7,20 @@ import Footer from "./Footer.jsx";
 import { useRef } from "react";
 import { Contact } from "./Contact.jsx";
 import Summary from "./Summary.jsx";
+import { jsPDF } from "jspdf";
+
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const resumeRef = useRef(null);
   const contactRef = useRef(null);
   const sumaryRef = useRef(null);
+  const downloadResume = useRef(null);
+
+  const handleDownload = () => {
+    const doc = new jsPDF();
+    doc.save("../src/assets/PDF/AJIL CG RESUME Nov.pdf");
+  };
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -112,6 +120,16 @@ function App() {
                 }}
               >
                 Summary
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Portfolio/src/assets/PDF/AJIL_CG_RESUME.pdf"
+                target="_blank"
+              >
+                Download Resume
               </a>
             </li>
           </ul>

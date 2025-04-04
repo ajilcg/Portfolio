@@ -468,7 +468,9 @@ body{
 }
 
 
-
-
+.indexx{
+  background: rgb(174,58,180);
+background: linear-gradient(117deg, rgba(174,58,180,0.8407738095238095) 6%, rgba(29,253,220,0.17970938375350143) 50%, rgba(69,252,198,1) 100%);
+}
 
  

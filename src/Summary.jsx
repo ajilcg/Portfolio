@@ -1,6 +1,11 @@
-import React from "react";
-
+import React, { useEffect, useRef } from "react";
+import { animated, useSpring } from "react-spring";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export const Summary = () => {
+  const springs = useSpring;
+  ({ from: { x: 0 }, to: { x: 100 } });
   return (
     <>
       <div style={{ paddingTop: "3rem" }}>

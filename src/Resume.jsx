@@ -1,4 +1,5 @@
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 export const Resume = () => {
   return (
@@ -83,7 +84,7 @@ export const Resume = () => {
                   <li>Designed and developed web forms using ASP.NET.</li>
                   <li>Involved in Testing and debugging.</li>
                   <li>Implemented front end validations using JavaScript.</li>
-                  <li>API Integration(Kotak NACH integration)</li>
+                  <li>API Integration(Kotak Mahindra NACH integration)</li>
                   <li>
                     Developed a new project using dot net core (.net 8) and
                     angular (Angular 17).

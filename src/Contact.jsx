@@ -1,8 +1,9 @@
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 export const Contact = () => {
   return (
-    <div style={{ paddingTop: "4rem" }}>
+    <div style={{ paddingTop: "4rem", paddingBottom: "4rem" }}>
       <br></br>
       <div
         class="container section-title aos-init aos-animate"

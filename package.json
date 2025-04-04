@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -22,16 +22,22 @@
     "@material-tailwind/react": "^2.1.10",
     "@mui/icons-material": "^6.4.3",
     "@mui/material": "^6.4.3",
+    "@react-spring/parallax": "^9.7.5",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "gsap": "^3.12.7",
     "i": "^0.3.7",
+    "jspdf": "^3.0.1",
     "mdb-react-ui-kit": "^9.0.0",
     "mdbootstrap": "^4.20.0",
     "npm": "^11.1.0",
     "react": "^19.0.0",
+    "react-animate-on-scroll": "^2.1.9",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.2.0"
+    "react-router-dom": "^7.2.0",
+    "react-scroll-parallax": "^3.4.5",
+    "react-spring": "^9.7.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
