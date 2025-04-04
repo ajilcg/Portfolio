@@ -128,7 +128,7 @@
     padding: 2em;
   }
   .card-image{
-    background-image: url("../src/assets/images/MAN.PNG");
+    background-image: url("MAN.PNG");
     /* background-image: url("../src/assets/images/IMG_20240114_185432_131.jpg"); */
     background-size: cover;
     }
