@@ -8,6 +8,7 @@ import { useRef } from "react";
 import { Contact } from "./Contact.jsx";
 import Summary from "./Summary.jsx";
 import { jsPDF } from "jspdf";
+import React, { useState, useEffect } from "react";
 
 function App() {
   const homeRef = useRef(null);
@@ -26,6 +27,16 @@ function App() {
     });
   };
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 600);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <>
       {/* layout */}
@@ -180,20 +191,24 @@ function App() {
             </div>
           </div>
           <div className="col-sm-6">
-            <div className="flex gap-4">
-              <img
-                class="avatar"
-                src="IMG_20240114_185432_131.jpg"
-                alt="avatar"
-                style={{
-                  borderRadius: "10px",
-                  width: "100%",
-                  height: "100%",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              />
-            </div>
+            {!isMobile ? (
+              <div className="flex gap-4">
+                <img
+                  class="avatar"
+                  src="IMG_20240114_185432_131.jpg"
+                  alt="avatar"
+                  style={{
+                    borderRadius: "10px",
+                    width: "100%",
+                    height: "100%",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
+              </div>
+            ) : (
+              <div></div>
+            )}
           </div>
         </div>
       </div>
