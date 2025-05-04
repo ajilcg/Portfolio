@@ -8,7 +8,7 @@ export const Summary = () => {
   ({ from: { x: 0 }, to: { x: 100 } });
   return (
     <>
-      <div style={{ paddingTop: "3rem" }}>
+      <div style={{ padding: "3rem" }}>
         <div
           class="container section-title aos-init aos-animate"
           data-aos="fade-up"

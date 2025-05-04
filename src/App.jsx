@@ -9,6 +9,7 @@ import { Contact } from "./Contact.jsx";
 import Summary from "./Summary.jsx";
 import { jsPDF } from "jspdf";
 import React, { useState, useEffect } from "react";
+// import { Certificate } from "./Certificate.jsx";
 
 function App() {
   const homeRef = useRef(null);
@@ -182,19 +183,24 @@ function App() {
               class="column large-8 small-12 rs-shop-header-section"
               data-autom="shop-header"
             >
-              <div class="rs-shop-header Web">Web Developer</div>
+              <div class="rs-shop-header Web anim">Web Developer</div>
               <br></br>
-              <div class="rs-shop-subheader">Hi i'm</div>&nbsp;
-              <h1 class="rs-shop-header">AJIL</h1>
-              <br></br>
-              <div class="rs-shop-subheader">From Kerala</div>
+              <div className="nme anim">
+                <div class="rs-shop-subheader">Hi i'm</div>&nbsp;
+                <h1 class="rs-shop-header cursor typewriter-animation">AJIL</h1>
+                <br></br>
+                <div class="rs-shop-subheader">From Kerala</div>
+              </div>
             </div>
           </div>
-          <div className="col-sm-6">
+          <div
+            className="col-sm-6 avatarContent"
+            style={{ marginTop: "-5rem" }}
+          >
             {!isMobile ? (
-              <div className="flex gap-4">
+              <div className="flex gap-4 avtar-container-img">
                 <img
-                  class="avatar"
+                  class="avatar anim"
                   src="IMG_20240114_185432_131.jpg"
                   alt="avatar"
                   style={{
@@ -203,6 +209,7 @@ function App() {
                     height: "100%",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
+                    opacity: "0.5",
                   }}
                 />
               </div>
@@ -214,19 +221,20 @@ function App() {
       </div>
       <br></br>
       <br></br>
-      <div ref={aboutRef}>
+      <div ref={aboutRef} className="AboutSeesion">
         <About></About>
       </div>
-      <div ref={resumeRef}>
+      <div className="ResSession" ref={resumeRef}>
         <Resume></Resume>
       </div>
-      <div ref={contactRef}>
+      <div>{/* <Certificate></Certificate> */}</div>
+      <div className="ContSession" ref={contactRef}>
         <Contact></Contact>
       </div>
-      <div ref={sumaryRef}>
+      <div className="SummarySession" ref={sumaryRef}>
         <Summary></Summary>
       </div>
-      <div style={{ paddingTop: "5rem" }}>
+      <div className="FooterSession" style={{ paddingTop: "5rem" }}>
         <Footer></Footer>
       </div>
       <div>

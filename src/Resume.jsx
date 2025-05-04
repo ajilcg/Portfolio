@@ -15,6 +15,8 @@ export const Resume = () => {
           style={{ textAlign: "center" }}
         >
           <div class="rs-shop-subheader abt">Resume</div>
+          <br></br>
+          <br></br>
         </div>
 
         <div class="container">

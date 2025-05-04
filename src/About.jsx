@@ -2,7 +2,10 @@ import React from "react";
 import "./About.css";
 export const About = () => {
   return (
-    <div style={{ paddingTop: "4rem", padding: "2rem" }} class="container">
+    <div
+      style={{ paddingTop: "4rem", padding: "2rem" }}
+      class="container AboutSeesion"
+    >
       <div class="row">
         <div class="card-wrapper">
           <div class="card">

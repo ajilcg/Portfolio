@@ -5,7 +5,7 @@ export const Footer = () => {
     <>
       <footer
         id="footer"
-        style={{ backgroundColor: "#928e8e33" }}
+        style={{ backgroundColor: "rgb(159 103 103)" }}
         class="footer light-background"
       >
         <div class="container">

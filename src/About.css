@@ -128,10 +128,18 @@
     padding: 2em;
   }
   .card-image{
-    background-image: url("../src/assets/images/MAN.jpg");
-    /* background-image: url("../src/assets/images/IMG_20240114_185432_131.jpg"); */
-    background-size: cover;
-    }
+    /* background-image: url("../src/assets/images/MAN.jpg"); */
+    background-image: url(https://www.linkedin.com/dms/prv/image/v2/D5606AQEF1IfKk-GZ9w/messaging-image-720/B56ZabIjNJGUAc-/0/1746359433190?m=AQKadioO-GDkhwAAAZabIjx-uhLGDJ5gAX7Gydhlck2TSK1HPg5ztvpwZA&ne=1&v=beta&t=V9P2QJvKyCcHu3nwNONa7M4aYrNhd_7F3rAfbhI-QM4);
+
+    /* background-image: url("../src/assets/images/IMG_20250413_170717_734.jpg"); */
+     
+     /* background-image: url("../src/assets/images/IMG_20240114_185432_131.jpg"); */
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color:rgb(159 103 103);
+  filter: grayscale(var(--value, 10%)); 
+ 
+  }
 
     /* @media (max-width: 1000px) {
       .card-image{
@@ -140,3 +148,5 @@
         background-position: center;
         }
   } */
+
+  

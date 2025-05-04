@@ -53,12 +53,7 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }  
 body{
   /* background: #000000;   */
-   background: linear-gradient(to right, #ffffff, #ffffff);  
-  
-}
-
-
-
+ }
 
 
 
@@ -75,9 +70,14 @@ body{
 .rs-shop-header-section .rs-shop-subheader {
   color: #6e6e73;
 }
-.Web{
+.container .Web{
   font-size: 20px;
   font-weight: 600;
+  animation-delay: 2.5s;
+}
+.container .nme{
+  animation-delay: 1s;
+
 }
 .abt{
   font-size: 50px;
@@ -303,10 +303,12 @@ body{
   border: 2px solid rgb(159 103 103);
 }
 
-.avatar{
+.avatarContent .avatar{
   /* filter: grayscale(var(--value, 1000%));  */
   /* filter: blur(1px); */
    mix-blend-mode: hard-light;
+   animation-delay: 1.7s;
+
 }
 .navbar-brand{
   font-family: "Arvo";
@@ -318,7 +320,7 @@ body{
   font-family: "Arvo";
   font-size:40px;
    display: inline-block;
-  letter-spacing: 1vw;
+  letter-spacing: 2vw;
   transition: transform 0.9s;
 }
 
@@ -331,7 +333,7 @@ body{
     transform: translateY(0);
   }
   35% {
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
 }
 
@@ -342,7 +344,7 @@ body{
     transform: translateY(0);
   }
   75% {
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
 }
 
@@ -375,15 +377,15 @@ body{
 }
 
 .key:nth-child(2) {
-  animation: pressDown2 3s infinite;
+  animation: pressDown2 4s infinite;
 }
 
 .key:nth-child(3) {
-  animation: pressDown3 4s infinite;
+  animation: pressDown3 6s infinite;
 }
 
 .key:nth-child(4) {
-  animation: pressDown4 2.5s infinite;
+  animation: pressDown4 8s infinite;
 }
 
 
@@ -473,4 +475,53 @@ body{
 background: linear-gradient(117deg, rgba(174,58,180,0.8407738095238095) 6%, rgba(29,253,220,0.17970938375350143) 50%, rgba(69,252,198,1) 100%);
 }
 
+.anim{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 1.5s linear forwards;
+}
  
+@keyframes moveup {
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
+}
+
+ 
+
+ 
+
+
+  .ResSession,.ContSession,.SummarySession,.FooterSession{ 
+    
+
+    background: #ECE9E6; 
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+     }
+  
+
+
+ 
+
+.avtar-container-img{
+  position: relative;
+ }
+
+.avatar.anim{
+  display: block; /* Remove bottom space */
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */ 
+}
+.avtar-container-img::after{
+  content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%; /* Adjust the height of the gradient */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 90%);
+    pointer-events: none; /* Allows clicks to pass through the overlay */
+}
