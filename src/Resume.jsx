@@ -27,7 +27,6 @@ export const Resume = () => {
               data-aos-delay="100"
             >
               <h3 class="resume-title">Sumary</h3>
-
               <div class="resume-item pb-0">
                 <h4>AJIL C G</h4>
                 <p>
@@ -45,7 +44,6 @@ export const Resume = () => {
                   <li>ajilc50@gmail.com</li>
                 </ul>
               </div>
-
               <h3 class="resume-title">Education</h3>
               <div class="resume-item">
                 <h4>INDIRA GANDHI NATIONAL OPEN UNIVERSITY</h4>
@@ -59,7 +57,6 @@ export const Resume = () => {
                   dignissimos deleniti nerada porti sand markend
                 </p> */}
               </div>
-
               <div class="resume-item">
                 <h4>TECHNICAL UNIVERSITY</h4>
                 <p>DIPLOMA IN COMPUTER ENGINEERING</p>
@@ -68,7 +65,6 @@ export const Resume = () => {
                 <h4>TECHNICAL UNIVERSITY</h4>
                 <p>ITI IN COMPUTER HARDWARE</p>
               </div>
-
               <h3 class="resume-title">PROJECTS</h3>
               <div class="resume-item">
                 <h4>LMS (Loan Managemnt System)</h4>
@@ -86,7 +82,10 @@ export const Resume = () => {
                   <li>Designed and developed web forms using ASP.NET.</li>
                   <li>Involved in Testing and debugging.</li>
                   <li>Implemented front end validations using JavaScript.</li>
-                  <li>API Integration(Kotak Mahindra NACH integration)</li>
+                  <li>
+                    API Integration(Kotak Mahindra NACH integration,AXIS
+                    BBPS(Bharat Bill Payment System) integration)
+                  </li>
                   <li>
                     Developed a new project using dot net core (.net 8) and
                     angular (Angular 17).
@@ -94,7 +93,6 @@ export const Resume = () => {
                 </ul>
               </div>
             </div>
-
             <div
               class="col-lg-6 aos-init aos-animate"
               data-aos="fade-up"
